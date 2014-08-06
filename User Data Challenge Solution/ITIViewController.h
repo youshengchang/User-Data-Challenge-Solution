@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITIUserData.h"
 
 @interface ITIViewController : UIViewController
 

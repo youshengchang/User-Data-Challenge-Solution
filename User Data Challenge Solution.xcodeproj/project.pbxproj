@@ -21,6 +21,11 @@
 		8F6A53521992B9910081B383 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6A53341992B9910081B383 /* UIKit.framework */; };
 		8F6A535A1992B9910081B383 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A53581992B9910081B383 /* InfoPlist.strings */; };
 		8F6A535C1992B9910081B383 /* User_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A535B1992B9910081B383 /* User_Data_Challenge_SolutionTests.m */; };
+		8F6A53671992B9C90081B383 /* ITIUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A53661992B9C90081B383 /* ITIUserData.m */; };
+		8F6A536C1992C65B0081B383 /* person1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A53681992C65B0081B383 /* person1.jpeg */; };
+		8F6A536D1992C65B0081B383 /* person2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A53691992C65B0081B383 /* person2.jpeg */; };
+		8F6A536E1992C65B0081B383 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A536A1992C65B0081B383 /* person3.jpg */; };
+		8F6A536F1992C65B0081B383 /* person4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A536B1992C65B0081B383 /* person4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		8F6A53571992B9910081B383 /* User Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "User Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		8F6A53591992B9910081B383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F6A535B1992B9910081B383 /* User_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		8F6A53651992B9C90081B383 /* ITIUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITIUserData.h; path = ../ITIUserData.h; sourceTree = "<group>"; };
+		8F6A53661992B9C90081B383 /* ITIUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITIUserData.m; path = ../ITIUserData.m; sourceTree = "<group>"; };
+		8F6A53681992C65B0081B383 /* person1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpeg; sourceTree = "<group>"; };
+		8F6A53691992C65B0081B383 /* person2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpeg; sourceTree = "<group>"; };
+		8F6A536A1992C65B0081B383 /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		8F6A536B1992C65B0081B383 /* person4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,8 @@
 		8F6A53361992B9910081B383 /* User Data Challenge Solution */ = {
 			isa = PBXGroup;
 			children = (
+				8F6A53651992B9C90081B383 /* ITIUserData.h */,
+				8F6A53661992B9C90081B383 /* ITIUserData.m */,
 				8F6A533F1992B9910081B383 /* ITIAppDelegate.h */,
 				8F6A53401992B9910081B383 /* ITIAppDelegate.m */,
 				8F6A53421992B9910081B383 /* Main.storyboard */,
@@ -126,6 +139,10 @@
 		8F6A53371992B9910081B383 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F6A53681992C65B0081B383 /* person1.jpeg */,
+				8F6A53691992C65B0081B383 /* person2.jpeg */,
+				8F6A536A1992C65B0081B383 /* person3.jpg */,
+				8F6A536B1992C65B0081B383 /* person4.jpeg */,
 				8F6A53381992B9910081B383 /* User Data Challenge Solution-Info.plist */,
 				8F6A53391992B9910081B383 /* InfoPlist.strings */,
 				8F6A533C1992B9910081B383 /* main.m */,
@@ -229,9 +246,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6A536E1992C65B0081B383 /* person3.jpg in Resources */,
+				8F6A536C1992C65B0081B383 /* person1.jpeg in Resources */,
 				8F6A53491992B9910081B383 /* Images.xcassets in Resources */,
 				8F6A533B1992B9910081B383 /* InfoPlist.strings in Resources */,
+				8F6A536F1992C65B0081B383 /* person4.jpeg in Resources */,
 				8F6A53441992B9910081B383 /* Main.storyboard in Resources */,
+				8F6A536D1992C65B0081B383 /* person2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +274,7 @@
 				8F6A533D1992B9910081B383 /* main.m in Sources */,
 				8F6A53471992B9910081B383 /* ITIViewController.m in Sources */,
 				8F6A53411992B9910081B383 /* ITIAppDelegate.m in Sources */,
+				8F6A53671992B9C90081B383 /* ITIUserData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
