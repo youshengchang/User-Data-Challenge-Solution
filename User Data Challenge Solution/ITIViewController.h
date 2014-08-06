@@ -11,4 +11,6 @@
 
 @interface ITIViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *users;
+
 @end

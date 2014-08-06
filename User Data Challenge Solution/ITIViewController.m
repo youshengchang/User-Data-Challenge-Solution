@@ -19,10 +19,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSArray *users = [ITIUserData users];
-    NSLog(@"%@", users);
+    _users = [ITIUserData users];
+    NSLog(@"%@", _users);
     
-    for(NSDictionary *user in users){
+    for(NSDictionary *user in _users){
             NSLog(@"UserName: %@ Email: %@ Password: %@ Age: %i Photo Name: %@", user[USER_NAME], user[USER_EMAIL], user[USER_PASSWORD], [user[USER_AGE] intValue], user[USER_IMAGE]);
         
     }
