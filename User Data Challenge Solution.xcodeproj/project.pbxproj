@@ -479,6 +479,7 @@
 				8F6A53611992B9910081B383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F6A53621992B9910081B383 /* Build configuration list for PBXNativeTarget "User Data Challenge SolutionTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				8F6A53641992B9910081B383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

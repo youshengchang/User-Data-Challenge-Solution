@@ -19,19 +19,44 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _users = [ITIUserData users];
-    NSLog(@"%@", _users);
     
-    for(NSDictionary *user in _users){
-            NSLog(@"UserName: %@ Email: %@ Password: %@ Age: %i Photo Name: %@", user[USER_NAME], user[USER_EMAIL], user[USER_PASSWORD], [user[USER_AGE] intValue], user[USER_IMAGE]);
-        
-    }
+    self.users = [ITIUserData users];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
+    // Return the number of rows in the section.
+    return [self.users count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userCell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    NSDictionary *user = self.users[indexPath.row];
+    
+    NSInteger row = indexPath.row;
+    
+    cell.textLabel.text = user[USER_NAME];
+    cell.detailTextLabel.text = user[USER_EMAIL];
+    cell.imageView.image = user[USER_IMAGE];
+    
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+ 
+    
+    return cell;
 }
 
 @end
