@@ -46,8 +46,7 @@
     // Configure the cell...
     NSDictionary *user = self.users[indexPath.row];
     
-    NSInteger row = indexPath.row;
-    
+  
     cell.textLabel.text = user[USER_NAME];
     cell.detailTextLabel.text = user[USER_EMAIL];
     cell.imageView.image = user[USER_IMAGE];
